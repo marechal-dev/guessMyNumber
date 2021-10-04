@@ -128,16 +128,12 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .left {
-    margin-top: 5rem;
-    width: auto;
-  }
-
+  .left,
   .right {
     margin-top: 5rem;
     width: auto;
   }
-
+  
   .btn {
     padding: 1rem 1.5rem;
   }
