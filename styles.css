@@ -122,10 +122,23 @@ h1 {
   margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) { 
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-bottom: 6rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
   main {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   main * {
@@ -134,14 +147,32 @@ h1 {
 
   .left,
   .right {
-    margin-top: 5rem;
     width: auto;
   }
 
+  .left {
+    margin-top: .1rem;
+  }
+
+  .right {
+    margin-top: 5rem;
+  }
+
   #play-again {
-    padding: 1.5rem 2rem;
+    padding: 3rem 2rem 1rem 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     align-items: center;
+  }
+
+  .number {
+    position: unset;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    align-self: center;
+
+    margin-top: 1.5rem;
   }
 
   .btn {
