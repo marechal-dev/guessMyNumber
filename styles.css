@@ -183,3 +183,21 @@ h1 {
     font-size: 1rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .number {
+    background: #eee;
+  }
+
+  .guess {
+    border-color: #eee;
+  }
+  
+  .btn {
+    background-color: #eee;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+  }
+}
