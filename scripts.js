@@ -12,6 +12,7 @@ let score = 20
 let highScore = 0
 let secretNumber = Math.trunc(Math.random() * 20) + 1
 
+// Function to reset the page styles and value when the reset button is pressed
 function resetGame() {
   document.querySelector('body').style.backgroundColor = '#222'
   guessMessage.textContent = 'Start guessing...'
@@ -24,10 +25,15 @@ function resetGame() {
   secretNumber = Math.trunc(Math.random() * 20) + 1
 }
 
+// Function to display a message at the querySelector .message
 function displayMessage(message) {
   guessMessage.textContent = message
 }
 
+/**
+ * Function that handles player input
+ * and determinate if value is too high, too low or if there is no value
+ */
 function handlePlayerGuess() {
   const guess = Number(playerGuess.value)
 
@@ -52,7 +58,7 @@ function handlePlayerGuess() {
   // When guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      displayMessage( guess > secretNumber ? '📈 Too high!' : '📉 Too low!')
+      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!')
 
       score--
       scoreMessage.textContent = score

@@ -117,3 +117,32 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main * {
+    font-size: 1.5rem;
+  }
+
+  .left {
+    margin-top: 5rem;
+    width: auto;
+  }
+
+  .right {
+    margin-top: 5rem;
+    width: auto;
+  }
+
+  .btn {
+    padding: 1rem 1.5rem;
+  }
+
+  .between {
+    font-size: 1rem;
+  }
+}
